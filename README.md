@@ -5,4 +5,4 @@
 
 
 ##### F1 Dominant Teams
-![F1 Dominant Teams](https://raw.githubusercontent.com/loictiemani/Formula1_project/main/images/F1_Dominant_Teams.png)
+![F1 Dominant Teams](https://raw.githubusercontent.com/loictiemani/Formula1_project/main/images/F1%20Dominant%20Teams)
