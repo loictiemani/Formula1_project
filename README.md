@@ -1,3 +1,3 @@
 # Formula1_project
 
-![Diagram](images/F1 Dominant Drivers.png)
+![Diagram](images/F1%20Dominant%20Drivers.png)
