@@ -65,12 +65,14 @@ This project showcases my end-to-end data engineering and analytics capabilities
 
 1. Import the notebooks into your Azure Databricks workspace.
 2. Mount or upload raw data to `dbfs:/mnt/formula1/raw/`.
-3. Run the notebooks in sequence:
-   - `01_raw_to_bronze.py`
-   - `02_bronze_to_silver.py`
-   - `03_silver_to_gold.py`
-4. Use `04_race_insights_dashboard.py` to visualize key KPIs.
-5. Optionally run `05_ml_driver_predictions.py` for ML modeling.
+3. Run the notebooks in sequence in the ingestion folder:
+   - `1.ingest_circuits_file.ipynb`
+   - `2.ingest_races_file.ipynb`
+   - `3.ingest_constructors.json_file.ipynb`
+  
+4. Run the notebooks in sequence in the transformation folder
+5. Use notebooks in the analysis folder `3.viz_find_dominant_drivers.ipynb` to visualize key KPIs.
+
 
 ---
 
