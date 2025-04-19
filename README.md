@@ -83,7 +83,9 @@ This project showcases my end-to-end data engineering and analytics capabilities
    - <a href="https://github.com/loictiemani/Formula1_project/blob/main/transformation/2.driver_standings.ipynb">2.driver_standings.ipynb</a>: Calculate and store driver standings per season
    - <a href="https://github.com/loictiemani/Formula1_project/blob/main/transformation/3.constructor_standings.ipynb">3.constructor_standings.ipynb</a>: Calculate and store constructor standings per season
    - <a href="https://github.com/loictiemani/Formula1_project/blob/main/transformation/4.calculated_race_results.ipynb">4.calculated_race_results.ipynb</a>: Calculate and store race results with additional metrics
-6. Use notebooks in the analysis folder `3.viz_find_dominant_drivers.ipynb` to visualize key KPIs.
+6. Use notebooks in the analysis folder to visualize key KPIs.
+   - <a href="https://github.com/loictiemani/Formula1_project/blob/main/analysis/1.find_dominant_drivers.ipynb">1.find_dominant_drivers.ipynb</a>: Identify dominant drivers across seasons
+   - <a href="https://github.com/loictiemani/Formula1_project/blob/main/analysis/2.find_dominant_teams.ipynb">2.find_dominant_teams.ipynb</a>: Identify dominant teams across seasons
 
 
 ---
