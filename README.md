@@ -124,6 +124,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 ## 🙌 Acknowledgements
 
-Inspired by Ramesh Retnasamy's Azure Databricks & Spark For Data Engineers
-Databricks’ Formula 1 demo and the Ergast API.  
-Shoutout to the F1 data community!
+- Inspired by Ramesh Retnasamy's Azure Databricks & Spark For Data Engineers
+- Databricks’ Formula 1 demo and the Ergast API.  
+- Shoutout to the F1 data community!
