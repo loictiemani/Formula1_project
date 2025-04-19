@@ -78,7 +78,12 @@ This project showcases my end-to-end data engineering and analytics capabilities
 
 
 4. Run the notebooks in sequence in the transformation folder
-5. Use notebooks in the analysis folder `3.viz_find_dominant_drivers.ipynb` to visualize key KPIs.
+   - <a href="https://github.com/loictiemani/Formula1_project/blob/main/transformation/0.create_presentation_database.ipynb">0.create_presentation_database.ipynb</a>: Create presentation (processed) database and schema
+   - <a href="https://github.com/loictiemani/Formula1_project/blob/main/transformation/1.race_results.ipynb">1.race_results.ipynb</a>: Create race_results table with processed race data
+   - <a href="https://github.com/loictiemani/Formula1_project/blob/main/transformation/2.driver_standings.ipynb">2.driver_standings.ipynb</a>: Calculate and store driver standings per season
+   - <a href="https://github.com/loictiemani/Formula1_project/blob/main/transformation/3.constructor_standings.ipynb">3.constructor_standings.ipynb</a>: Calculate and store constructor standings per season
+   - <a href="https://github.com/loictiemani/Formula1_project/blob/main/transformation/4.calculated_race_results.ipynb">4.calculated_race_results.ipynb</a>: Calculate and store race results with additional metrics
+6. Use notebooks in the analysis folder `3.viz_find_dominant_drivers.ipynb` to visualize key KPIs.
 
 
 ---
