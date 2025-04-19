@@ -1,8 +1,11 @@
-# Formula1_project
+# 🏎️ Formula 1 Data Analytics Project (Azure Databricks)
 
+This project leverages Formula 1 race data to perform end-to-end data engineering and analytics workflows on **Azure Databricks**. The goal is to ingest, process, and analyze F1 data using PySpark, Delta Lake, and Databricks Notebooks, delivering insights into driver performance, team strategies, and race statistics.
 
+---
 
-/f1-databricks-project │ ├── notebooks/ │ ├── 01_raw_to_bronze.py │ ├── 02_bronze_to_silver.py │ ├── 03_silver_to_gold.py │ ├── 04_analytics_dashboard.py │ └── 05_ml_driver_performance.py │ ├── data/ │ ├── raw/ │ └── processed/ │ ├── pipelines/ │ └── f1_ingestion_pipeline.json │ ├── tests/ │ └── test_transformations.py │ └── README.md
+## 📁 Project Structure
+
 
 ##### F1 Dominant Drivers
 ![F1 Dominant Drivers](https://raw.githubusercontent.com/loictiemani/Formula1_project/main/images/F1%20Dominant%20Drivers)
