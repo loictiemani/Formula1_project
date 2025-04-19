@@ -66,10 +66,17 @@ This project showcases my end-to-end data engineering and analytics capabilities
 1. Import the notebooks into your Azure Databricks workspace.
 2. Mount or upload raw data to `dbfs:/mnt/formula1/raw/`.
 3. Run the notebooks in sequence in the ingestion folder:
-   -` <a href="https://github.com/loictiemani/Formula1_project/blob/main/ingestion/1.ingest_circuits_file.ipynb">1.ingest_circuits_file.ipynb</a>`: Ingest Circuits file
-   - `2.ingest_races_file.ipynb`
-   - `3.ingest_constructors.json_file.ipynb`
-  
+   - <a href="https://github.com/loictiemani/Formula1_project/blob/main/ingestion/0.ingest_all_files.ipynb">0.ingest_all_files.ipynb</a>: Ingest all raw data files in one run
+   - <a href="https://github.com/loictiemani/Formula1_project/blob/main/ingestion/1.ingest_circuits_file.ipynb"> 1.ingest_circuits_file.ipynb</a>: Ingest circuits file
+   - <a href="https://github.com/loictiemani/Formula1_project/blob/main/ingestion/2.ingest_races_file.ipynb"> 2.ingest_races_file.ipynb </a>: Ingest races file
+   - <a href="https://github.com/loictiemani/Formula1_project/blob/main/ingestion/3.ingest_constructors.json_file.ipynb">3.ingest_constructors.json_file.ipynb</a>: Ingest constructors JSON file
+   - <a href="https://github.com/loictiemani/Formula1_project/blob/main/ingestion/4.ingest_drivers.json_file.ipynb">4.ingest_drivers.json_file.ipynb</a>: Ingest drivers JSON file
+   - <a href="https://github.com/loictiemani/Formula1_project/blob/main/ingestion/5.ingest_results.json_file.ipynb">5.ingest_results.json_file.ipynb</a>: Ingest results JSON file
+   - <a href="https://github.com/loictiemani/Formula1_project/blob/main/ingestion/6.ingest_pit_stops.json_file.ipynb">6.ingest_pit_stops.json_file.ipynb</a>: Ingest pit stops JSON file
+   - <a href="https://github.com/loictiemani/Formula1_project/blob/main/ingestion/7.ingest_lap_times_file.ipynb">7.ingest_lap_times_file.ipynb</a>: Ingest lap times file
+   - <a href="https://github.com/loictiemani/Formula1_project/blob/main/ingestion/8.ingest_qualifying.json_file.ipynb">8.ingest_qualifying.json_file.ipynb</a>: Ingest qualifying JSON file
+
+
 4. Run the notebooks in sequence in the transformation folder
 5. Use notebooks in the analysis folder `3.viz_find_dominant_drivers.ipynb` to visualize key KPIs.
 
