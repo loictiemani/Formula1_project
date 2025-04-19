@@ -66,7 +66,7 @@ This project showcases my end-to-end data engineering and analytics capabilities
 1. Import the notebooks into your Azure Databricks workspace.
 2. Mount or upload raw data to `dbfs:/mnt/formula1/raw/`.
 3. Run the notebooks in sequence in the ingestion folder:
-   - `1.ingest_circuits_file.ipynb`
+   - `1.ingest_circuits_file.ipynb` <a href="https://github.com/loictiemani/Formula1_project/blob/main/ingestion/1.ingest_circuits_file.ipynb">1.ingest_circuits_file.ipynb</a>: Ingest Circuits file
    - `2.ingest_races_file.ipynb`
    - `3.ingest_constructors.json_file.ipynb`
   
