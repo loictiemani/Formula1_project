@@ -1,12 +1,96 @@
-# 🏎️ Formula 1 Data Analytics Project (Azure Databricks)
+# 🏎️ Formula 1 Data Engineering & Analytics Project | Azure Databricks
 
-This project leverages Formula 1 race data to perform end-to-end data engineering and analytics workflows on **Azure Databricks**. The goal is to ingest, process, and analyze F1 data using PySpark, Delta Lake, and Databricks Notebooks, delivering insights into driver performance, team strategies, and race statistics.
+This project showcases my end-to-end data engineering and analytics capabilities using **Azure Databricks**. Using real-world Formula 1 race data, I built a robust pipeline from raw ingestion to analytics and machine learning — demonstrating my ability to design scalable data solutions, implement best practices in the medallion architecture, and extract insights from complex datasets.
 
 ---
 
-## 📁 Project Structure
+## 🧰 Tech Stack
+
+- **Cloud Platform**: Azure Databricks (Spark-based runtime)
+- **Languages**: Python (PySpark), SQL
+- **Data Lake**: Azure Data Lake Storage Gen2 (Delta Lake format)
+- **Ingestion**: Databricks Auto Loader
+- **Transformation**: Medallion Architecture (Bronze → Silver → Gold)
+- **Orchestration**: Databricks Workflows
+- **Visualization**: Databricks SQL (BI-ready datasets)
+- **ML (Optional)**: MLflow, AutoML
+
+---
+
+## 🎯 Project Objectives
+
+✅ Build a production-style data lakehouse architecture  
+✅ Automate ingestion and transformation using PySpark and Delta Lake  
+✅ Deliver analytical datasets and dashboards for F1 race insights  
+✅ (Bonus) Use ML to predict driver performance based on historical race data
+
+---
+
+## 🏗️ Architecture Overview
+
+                ┌─────────────┐
+                │   Raw Data  │   ← CSV/JSON from Ergast API
+                └────┬────────┘
+                     ▼
+            ┌────────────────┐
+            │   Bronze Layer │  ← Ingested via Auto Loader
+            └────┬───────────┘
+                 ▼
+          ┌──────────────────┐
+          │  Silver Layer    │  ← Cleaned & normalized with PySpark
+          └────┬─────────────┘
+               ▼
+        ┌────────────────────┐
+        │   Gold Layer       │  ← Aggregated race metrics & BI outputs
+        └────────────────────┘
 
 
+---
+
+## 📊 Key Insights Produced
+
+- 🔥 Fastest drivers per season & circuit
+- 🛠️ Pit stop strategy analysis
+- 🏁 Constructor performance over time
+- 🌍 Driver nationality distribution
+- 📈 Race results trends and championship points
+
+---
+
+## 📂 Project Structure
+
+---
+
+## 🔁 How to Use This Project
+
+1. Import the notebooks into your Azure Databricks workspace.
+2. Mount or upload raw data to `dbfs:/mnt/formula1/raw/`.
+3. Run the notebooks in sequence:
+   - `01_raw_to_bronze.py`
+   - `02_bronze_to_silver.py`
+   - `03_silver_to_gold.py`
+4. Use `04_race_insights_dashboard.py` to visualize key KPIs.
+5. Optionally run `05_ml_driver_predictions.py` for ML modeling.
+
+---
+
+## 🧠 Skills Demonstrated
+
+- Designing & implementing a **medallion architecture**
+- Building scalable pipelines with **PySpark & Delta Lake**
+- Optimizing tables with **Z-Ordering & partitioning**
+- Automating workflows with **Databricks Workflows**
+- Performing **exploratory data analysis** & storytelling
+- Developing a **job-ready portfolio project** in a real-world context
+
+---
+
+## 📈 Sample Visuals (Screenshots)
+
+<!-- Add images here if applicable -->
+- Driver standings trend by season  
+- Pit stop durations by team  
+- Constructors' championship history  
 ##### F1 Dominant Drivers
 ![F1 Dominant Drivers](https://raw.githubusercontent.com/loictiemani/Formula1_project/main/images/F1%20Dominant%20Drivers)
 
@@ -17,54 +101,10 @@ This project leverages Formula 1 race data to perform end-to-end data engineerin
 
 ---
 
-## 💡 Key Features
+## 📜 Data Source
 
-- 📦 **Ingestion Layer (Raw to Bronze)**  
-  Load raw CSV/JSON data into Delta format using Auto Loader and schema inference.
+- [Ergast Developer API](https://ergast.com/mrd/): Public F1 data API used to pull historical racing data.
 
-- ⚙️ **Transformation Layer (Bronze to Silver/Gold)**  
-  Clean, transform, and optimize data using PySpark and Delta Lake.
-
-- 📊 **Analytics**  
-  Generate insights like:
-  - Fastest lap analysis
-  - Driver standings trends
-  - Constructor performance by season
-
-
-
-- 🧱 **Modular Notebook Design**  
-  Each notebook performs a distinct task and can be used independently or via pipelines.
-
----
-
-## 🔧 Tech Stack
-
-- **Platform**: Azure Databricks
-- **Languages**: Python (PySpark), SQL
-- **Data Storage**: Azure Data Lake Storage Gen2 + Delta Lake
-- **Visualization**: Databricks SQL / Power BI
-- **Orchestration**: Databricks Workflows and Azure Data Factory
-
----
-
-## 🚀 How to Run
-
-1. Clone this repo into your Databricks workspace:
-   - Use the Databricks Repo functionality or `dbutils.notebook.run()` for modular execution.
-
-2. Upload data to `dbfs:/mnt/formula1/raw/`.
-
-3. Execute notebooks in sequence:
-   - `01_raw_to_bronze` → `02_bronze_to_silver` → `03_silver_to_gold`
-
-4. Use `04_analytics_dashboard` for visualizations.
-
----
-
-## 📂 Dataset Source
-
-Data obtained from [Ergast Developer API](https://ergast.com/mrd/) and preprocessed into CSV files.  
 Includes:
 - Drivers
 - Constructors
@@ -72,24 +112,6 @@ Includes:
 - Results
 - Lap times
 - Pit stops
-
----
-
-## ✅ To-Do
-
-- [x] Initial ingestion with Auto Loader
-- [x] Bronze/Silver/Gold layer implementation
-- [x] Delta Lake optimization
-- [ ] ML-based driver performance prediction
-- [ ] Integration with Power BI dashboard
-
----
-
-## 🤝 Contributing
-
-Feel free to fork this project or raise issues. PRs are welcome!  
-Make sure to follow Databricks notebook version control best practices.
-
 ---
 
 ## 📜 License
@@ -103,4 +125,3 @@ MIT License. See [LICENSE](./LICENSE) for details.
 Inspired by Ramesh Retnasamy's Azure Databricks & Spark For Data Engineers
 Databricks’ Formula 1 demo and the Ergast API.  
 Shoutout to the F1 data community!
-
