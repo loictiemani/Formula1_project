@@ -31,8 +31,7 @@ This project leverages Formula 1 race data to perform end-to-end data engineerin
   - Driver standings trends
   - Constructor performance by season
 
-- 🤖 **Machine Learning (Optional)**  
-  Predict driver performance or pit stop strategy outcomes using MLflow & Databricks AutoML.
+
 
 - 🧱 **Modular Notebook Design**  
   Each notebook performs a distinct task and can be used independently or via pipelines.
@@ -44,8 +43,8 @@ This project leverages Formula 1 race data to perform end-to-end data engineerin
 - **Platform**: Azure Databricks
 - **Languages**: Python (PySpark), SQL
 - **Data Storage**: Azure Data Lake Storage Gen2 + Delta Lake
-- **Visualization**: Databricks SQL / Power BI (optional)
-- **Orchestration**: Databricks Workflows or Azure Data Factory
+- **Visualization**: Databricks SQL / Power BI
+- **Orchestration**: Databricks Workflows and Azure Data Factory
 
 ---
 
@@ -101,6 +100,7 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 ## 🙌 Acknowledgements
 
-Inspired by Databricks’ Formula 1 demo and the Ergast API.  
+Inspired by Ramesh Retnasamy's Azure Databricks & Spark For Data Engineers
+Databricks’ Formula 1 demo and the Ergast API.  
 Shoutout to the F1 data community!
 
